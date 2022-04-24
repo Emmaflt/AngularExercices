@@ -1,0 +1,4 @@
+<!-- <app-face-snap [faceSnap]="mySnap"></app-face-snap> -->
+<!-- <app-face-snap [faceSnap]="mySnap" *ngIf="mySnap.snaps > 4"></app-face-snap> - Pour cacher la publi si elle a moins de 4 snaps-->
+ 
+<app-face-snap *ngFor="let faceSnap of faceSnaps" [faceSnap]="faceSnap"></app-face-snap>
